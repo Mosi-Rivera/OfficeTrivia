@@ -1,0 +1,87 @@
+@font-face {
+    font-family: handwriting;
+    src: url(../assets/Amatic-Bold.ttf);
+}
+
+html,
+body
+{
+    margin: 0px;
+    padding: 0px;
+    overflow: hidden;
+    background-color: #E3E7DC;
+}
+
+#main
+{
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+}
+
+#main-container {
+    position: relative;
+    margin: 5px;
+    width: 100%;
+    z-index: 1;
+    display: flex;
+    flex-flow: row wrap;
+    max-width: 600px;
+}
+#main-container::before
+{
+    content: "";
+    display: inline-block;
+    padding-top: 100%;
+}
+
+#loading-screen-div
+{
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    z-index: 100000000000;
+    background-image: linear-gradient(#848489 1px, transparent 0px);
+    background-size: 100% 2em;
+    background-position-y: 24px;
+    line-height: 2em;
+    background-color: #ECEEEF;
+    top: 100px;
+    transform: rotate(3deg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #505054;
+    font-family: handwriting;
+    font-size: 3rem;
+    transition: top 0.3s ease-in;
+}
+
+.remove
+{
+    top: 100vh !important;
+}
+
+#result-container
+{
+    display: flex;
+    width: 100%;
+    max-width: 600px;
+    justify-content: space-around;
+    align-items: center;
+    flex-flow: row;
+    color: #505054;
+    font-family: handwriting;
+    font-size: 3rem;
+}
+
+#title
+{
+    color: #848689;
+    font-family: handwriting;
+    font-size: 3rem;
+}

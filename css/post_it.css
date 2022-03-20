@@ -1,0 +1,132 @@
+#post-it-container {
+    position: absolute;
+    margin: 5px;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+    /* float:left;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between; */
+    max-width: 600px;
+}
+#post-it-container {
+    perspective: 1000;
+}
+.post-it:nth-child(1)
+{
+    left: 0;
+    top: 0;
+}
+.post-it:nth-child(2)
+{
+    right: 0;
+    top: 0;
+}
+.post-it:nth-child(3)
+{
+    left: 0;
+    bottom: 0;
+}
+.post-it:nth-child(4)
+{
+    right: 0;
+    bottom: 0;
+}
+.post-it {
+    color: #262B32;
+    position: absolute;
+    width: 48%;
+    transform-style: preserve-3d;
+    transition: all 150ms ease-in-out;
+    background: rgb(255,237,2);
+    background: linear-gradient(135deg, rgba(255,237,2,1) 0%, rgba(255,237,2,1) 80%, rgba(254,246,128,1) 81%, rgba(254,246,128,1) 100%);
+    border: 5px solid #E2CC02;
+    box-sizing: border-box;
+}
+.post-it::before
+{
+    content: "";
+    display: inline-block;
+    padding-top: 100%;
+}
+.post-it:hover {
+    transform: rotate(9deg);
+    -moz-box-shadow: 2px 2px 9px rgba(194,194,194,.9);
+    -webkit-box-shadow: 2px 2px 9px rgba(194,194,194,.9);
+    box-shadow: 2px 2px 9px rgba(194,194,194,.9);
+    cursor:pointer;
+}
+.selected.post-it
+{
+    width: 100%;
+    z-index: 1000;
+    transform: rotateY(180deg);
+}
+.face {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    height: 100%;
+    width: 100%;
+    backface-visibility: hidden;
+    box-sizing: content-box;
+    box-sizing: border-box;
+    font-family: handwriting;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+}
+.face.back {
+    display: block;
+    transform: rotateY(180deg);
+    padding: 5px;
+    color: black;
+    text-align: center;
+    font-size:2em;
+}
+
+.face.back h5
+{
+    font-size: 2.5rem;
+}
+.face .answer
+{
+    margin: 1rem 0px;
+    position: relative;
+}
+
+.face .answer:hover
+{
+    color: #505054;
+}
+
+.face .answer::before
+{
+    content: "";
+    display: inline-block;
+    width: 0px;
+    transition: width 0.2s ease-in-out;
+    background-color: transparent;
+}
+.face .answer:hover::before
+{
+    width: 2rem;
+}
+
+.face .answer.correct::before
+{
+    position: absolute;
+    left: 25%;
+    bottom: 0px;
+    margin: 0 auto;
+    width: 50%;
+    height: 100%;
+    background-color: #8FC419 !important;
+    z-index: -1;
+}
