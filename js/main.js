@@ -95,7 +95,7 @@ const handleAnswerClick = correct => (e) => {
     setTimeout(() => {
         correct_answer.classList.remove('correct');
         setUpPostIts();
-    },1000);
+    },2000);
 }
 
 const setUpPostIts = () => {

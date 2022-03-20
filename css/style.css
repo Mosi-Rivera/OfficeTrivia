@@ -63,7 +63,7 @@ body
 
 .remove
 {
-    top: 100vh !important;
+    top: 110vh !important;
 }
 
 #result-container
@@ -85,3 +85,33 @@ body
     font-family: handwriting;
     font-size: 3rem;
 }
+
+@media only screen and (max-width: 600px) {
+    .answer {
+        font-size: 1.8rem !important;
+    }
+    .face.back h5
+    {
+        font-size: 2rem !important;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .answer {
+        font-size: 1.3rem !important;
+    }
+    .face.back h5
+    {
+        font-size: 1.5rem !important;
+    }
+}
+
+/* @media only screen and (max-width: 400px) {
+    .answer {
+        font-size: 1rem !important;
+    }
+    .face.back h5
+    {
+        font-size: 1.3rem !important;
+    }
+} */
