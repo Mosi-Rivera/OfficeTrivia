@@ -3,7 +3,7 @@
   <h3 align="center">Office Trivia</h3>
 
   <p align="center">
-    Because there's no better place to waste time!
+    Why work when you can play some trivia?
     <br />
     <a href="https://mosi-rivera.github.io/OfficeTrivia/">View Demo</a>
     ·
