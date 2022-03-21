@@ -81,7 +81,7 @@ body
 
 #title
 {
-    color: #848689;
+    color: #505054;
     font-family: handwriting;
     font-size: 3rem;
 }
@@ -105,13 +105,3 @@ body
         font-size: 1.5rem !important;
     }
 }
-
-/* @media only screen and (max-width: 400px) {
-    .answer {
-        font-size: 1rem !important;
-    }
-    .face.back h5
-    {
-        font-size: 1.3rem !important;
-    }
-} */

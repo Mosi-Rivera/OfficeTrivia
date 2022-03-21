@@ -35,7 +35,6 @@ const handleInitialSetup = async () => {
     try
     {
         questions[1] = await getQuestions();
-        console.log(questions[1]);
         setUpPostIts();
         stopLoadingScreen();
     }

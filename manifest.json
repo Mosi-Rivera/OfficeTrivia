@@ -1,0 +1,35 @@
+{
+    "short_name": "OT",
+    "name": "Office Trivia",
+    "icons": [
+      {
+        "src": "assets/android-chrome-192x192.png",
+        "sizes": "192x192",
+        "type": "image/png"
+      },
+      {
+        "src": "assets/android-chrome-512x512.png",
+        "sizes": "192x192",
+        "type": "image/png"
+      },
+      {
+        "src": "assets/apple-touch-icon.png",
+        "type": "image/png",
+        "sizes": "180x180"
+      },
+      {
+        "src": "assets/favicon-16x16.png",
+        "type": "image/png",
+        "sizes": "16x16"
+      },
+      {
+        "src": "assets/favicon-32x32.png",
+        "type": "image/png",
+        "sizes": "32x32"
+      }
+    ],
+    "start_url": ".",
+    "display": "standalone",
+    "theme_color": "#000000",
+    "background_color": "#E3E7DC"
+  }
