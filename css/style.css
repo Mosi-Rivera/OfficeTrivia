@@ -1,6 +1,7 @@
 @font-face {
     font-family: handwriting;
     src: url(../assets/Amatic-Bold.ttf);
+    font-display: swap;
 }
 
 html,
@@ -56,7 +57,7 @@ body
     justify-content: center;
     align-items: center;
     color: #505054;
-    font-family: handwriting;
+    font-family: handwriting, sans-serif;
     font-size: 3rem;
     transition: top 0.3s ease-in;
 }
@@ -75,14 +76,14 @@ body
     align-items: center;
     flex-flow: row;
     color: #505054;
-    font-family: handwriting;
+    font-family: handwriting, sans-serif;
     font-size: 3rem;
 }
 
 #title
 {
     color: #505054;
-    font-family: handwriting;
+    font-family: handwriting, sans-serif;
     font-size: 3rem;
 }
 

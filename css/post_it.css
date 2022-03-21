@@ -76,7 +76,7 @@
     backface-visibility: hidden;
     box-sizing: content-box;
     box-sizing: border-box;
-    font-family: handwriting;
+    font-family: handwriting, sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
