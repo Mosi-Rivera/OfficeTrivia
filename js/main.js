@@ -27,7 +27,7 @@ let interval_id = null;
 let getSetAnswerCount = null;
 
 const handleInitialSetup = async () => {
-    startLoadingScreen()
+    startLoadingScreen();
     getSetAnswerCount = handleAnswerCount();
     post_its = POST_IT_CONTAINER.children();
     for (let i = 4; i--;)
