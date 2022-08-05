@@ -20,7 +20,7 @@ const colors = [
 ];
 const correct_color = '#858687';
 const default_answer_color = '#262B32';
-const API_URL = 'https://the-trivia-api.com/questions?limit=4';
+const API_URL = 'https://the-trivia-api.com/api/questions?limit=4';
 const loading_screen_strings = ['Removing old post-its.','Scraping adhesive.','Buying office supplies.','Cleaning white board.','Placing new post-its.','Writing questions.','Spilling coffee on work area...','Starting over.'];
 const questions = [null,null];
 let interval_id = null;
